@@ -15,7 +15,7 @@
   <header class="p-4">
     <div class="container mx-auto">
       <!-- Logo (Replace 'logo.png' with your logo image file) -->
-      <a href="http://127.0.0.1:5500/src/index.html">
+      <a href="/index.html">
         <img src="./static/logocolor.png" alt="Logo" class="w-auto h-10 mx-auto">
       </a>  
     </div>
@@ -130,7 +130,7 @@ function clicBoton(respuesta){
   if ( quiz.currentQuestionIndex + 1 == quiz.questions.length){
     var resultadoFinal = quiz.getTopAreas()
     console.log(resultadoFinal) 
-    window.open(`/src/opciones.html?nombre=${nombre}&top1=${resultadoFinal[0].area}&top2=${resultadoFinal[1].area}&top3=${resultadoFinal[2].area}`, "_self")
+    window.open(`/opciones.html?nombre=${nombre}&top1=${resultadoFinal[0].area}&top2=${resultadoFinal[1].area}&top3=${resultadoFinal[2].area}`, "_self")
 
   }
   else{
