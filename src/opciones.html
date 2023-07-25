@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Tesis OVP</title>
+</head>
+
+<body>
+
+    <header class="bg-[#0D084D]">
+        <!-- nab_bar -->
+        <nav class="relative bg-[#0D084D] dark:bg-gray-900">
+            <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+
+                <!-- Logo -->
+                <a href="http://127.0.0.1:5500/src/index.html"><img class="w-auto h-6 sm:h-10"
+                        src="./static/logo.png"></a>
+
+                <!-- btn nab_bar -->
+                <div
+                    class="absolute z-20 w-full px-6 py-4 md:mt-0 md:p-0 md:top-0 md:relative md:w-auto  md:flex md:items-center">
+                    <div class="flex flex-col md:flex-row md:mx-6">
+                        <a class="my-2 text-white dark:text-gray-200 md:mx-4 md:my-0 cursor-pointer"
+                            href="#">Metodología Chaside</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- text home -->
+        <div class="px-24 mx-auto pt-6 bg-[#3835BF]">
+            <div class="items-center lg:flex">
+                <div class="w-full lg:w-1/2">
+                    <div class="lg:max-w-lg">
+                        <h1 class="text-3xl tracking-tight font-bold font-sans text-white dark:text-white lg:text-5xl">
+                            !Felicitaciones! <br><span id="idNombre" class="text-[#D0E500]"></span> Lo lograste</h1>
+
+                        <p class="text-white text-lg  dark:text-gray-400 mt-4">En este apartado descubre tu perfil
+                            vocacional y
+                            revisa las áreas y profesiones que encajan contigo.</p>
+                    </div>
+                </div>
+
+                <!-- img portada -->
+                <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+                    <img class="lg:max-w-3xl " src="./static/chica.png" alt="chica test OVP">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- body -->
+    <div id="body">
+
+        <!-- Secction: 3 OPCIONES  -->
+        <section class="text-gray-600 body-font overflow-hidden">
+            <div class="container px-5 py-24 mx-auto">
+
+                <div
+                    class="bg-white dark:bg-gray-900 container mx-auto px-6 pb-12 text-center justify-center items-center">
+                    <h2 class="mt-2 text-center text-4xl font-bold text-[#0D084D] lg:text-4xl dark:text-white">Te mostramos 3 opciones</h2>
+                    <p class=" mt-6 text-lg leading-8 text-gray-600 ">De acuerdo a las respuestas, este es el resultado del Test de <br>Orientación Vocacional.</p>
+                </div>
+
+                <div class="-my-8 divide-y-2 divide-gray-100">
+                    
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span class="font-bold title-font text-gray-700">OPCIÓN 1 </span>
+                            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                        </div>
+                        <div class="md:flex-grow">
+                            <h2 id="opcion1" class="text-2xl font-bold text-[#0D084D] title-font mb-2"></h2>
+                            <p id="descripcion1" class="leading-relaxed"></p>
+                            <a id="url1" class="text-indigo-500 inline-flex items-center mt-4 cursor-pointer">Conocer más →</a>
+                        </div>
+                    </div>
+
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span class="font-bold title-font text-gray-700">OPCIÓN 2 </span>
+                            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                        </div>
+                        <div class="md:flex-grow">
+                            <h2 id="opcion2" class="text-2xl font-bold text-[#0D084D] title-font mb-2"></h2>
+                            <p id="descripcion2" class="leading-relaxed"></p>
+                            <a id="url2" class="text-indigo-500 inline-flex items-center mt-4 cursor-pointer">Conocer más →</a>
+                        </div>
+                    </div>
+
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span class="font-bold title-font text-gray-700">OPCIÓN 2 </span>
+                            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                        </div>
+                        <div class="md:flex-grow">
+                            <h2 id="opcion3" class="text-2xl font-bold text-[#0D084D] title-font mb-2"></h2>
+                            <p id="descripcion3" class="leading-relaxed"></p>
+                            <a id="url3" class="text-indigo-500 inline-flex items-center mt-4 cursor-pointer">Conocer más →</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- secction: VIDEO -->
+        <section class="bg-white dark:bg-gray-900 container mx-auto px-6 text-center justify-center items-center">
+            <iframe class="min-w-full mt-12 h-64 md:h-[550px] rounded-xl overflow-hidden"
+                src="https://www.youtube.com/embed/hGGL1sA0H5k" frameborder="0" allow="autoplay; fullscreen"
+                allowfullscreen=""></iframe>
+        </section>
+
+
+        <!-- Secction: SOFTWARE -->
+        <section>
+            <div class="px-5 py-24 mx-auto lg:px-16">
+                <div class="flex flex-col w-full mb-8 text-center">
+                    <span class="mb-4 text-4xl font-bold text-[#0D084D]">Software utilizados</span>
+                </div>
+                <div class="mx-auto text-center">
+                    <div class="grid grid-cols-4 gap-4 mx-auto lg:grid-cols-4">
+                        <div>
+                            <img class="h-4 mx-auto lg:h-12" src="./static/html.png" alt="Figma">
+                        </div>
+                        <div>
+                            <img class="h-4 mx-auto lg:h-12" src="./static/tailwind.png" alt="Framer">
+                        </div>
+                        <div>
+                            <img class="h-4 mx-auto lg:h-12" src="./static/js.png" alt="Sketch ">
+                        </div>
+                        <div>
+                            <img class="h-4 mx-auto lg:h-12" src="./static/node.png" alt="Sketch ">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Secction: AUTORES -->
+        <section class="bg-white dark:bg-gray-900">
+
+            <div class="container px-6 py-24 mx-auto">
+                <h1 class="text-center text-4xl font-bold text-[#0D084D] lg:text-3xl dark:text-white">Creadores del
+                    entorno virtual
+                </h1>
+
+                <section class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 lg:grid-cols-2 xl:grid-cols-2">
+                    <div class="p-8 border rounded-lg dark:border-gray-700">
+                        <p class="leading-loose text-gray-500 dark:text-gray-400">
+                            Estudiante la carrera de Sistemas Multimedia de la Facutad de Filosofía de la Universidad de
+                            Guayaquil. Especialista en Marketing y Sistemas Multimedia.
+                        </p>
+
+                        <div class="flex items-center mt-8 -mx-2">
+                            <img class="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-300 dark:ring-gray-700"
+                                src="./static/ronald.png" alt="">
+
+                            <div class="mx-2">
+                                <h1 class="font-semibold text-gray-800 dark:text-white">Ronald Reyes Arciniegas</h1>
+                                <span class="text-sm text-gray-500">Estudiante Universidad de Guayaquil</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-8 border rounded-lg dark:border-gray-700">
+                        <p class="leading-loose text-gray-500 dark:text-gray-400">
+                            “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero
+                            ad
+                            tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum,
+                            culpa
+                            aperiam dolorum, obcaecati corrupti aspernatur a.”.
+                        </p>
+
+                        <div class="flex items-center mt-8 -mx-2">
+                            <img class="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-300 dark:ring-gray-700"
+                                src="./static/elizabth.png" alt="">
+
+                            <div class="mx-2">
+                                <h1 class="font-semibold text-gray-800 dark:text-white">Jeny Doe</h1>
+                                <span class="text-sm text-gray-500">CEO, Jeny Consultency</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0D084D] dark:bg-gray-900">
+        <div class="container flex flex-col items-center justify-between px-6 py-8 mx-auto lg:flex-row">
+            <a href="#">
+                <img class="w-auto h-7" src="./static/logo.png" alt="">
+            </a>
+            <p class="mt-6 text-sm text-white lg:mt-0 dark:text-gray-400">© Copyright 2023 Ronald Reyes Arciniegas. </p>
+        </div>
+    </footer>
+
+</body>
+
+
+<script>
+  var areas = {
+    "C": { titulo: "COMUNICACION", descipcion: "11111", url:"/src/respuestas/administrativa.html"},
+    "H": { titulo: "h", descipcion: "22222", url:"/src/respuestas/administrativa.html"},
+    "A": { titulo: "A", descipcion: "3333", url:"/src/respuestas/administrativa.html"},
+    "S": { titulo: "S", descipcion: "4444", url:"/src/respuestas/administrativa.html"},
+    "I": { titulo: "I", descipcion: "555", url:"/src/respuestas/administrativa.html"},
+    "D": { titulo: "D", descipcion: "666", url:"/src/respuestas/administrativa.html"},
+    "E": { titulo: "E", descipcion: "777", url:"/src/respuestas/administrativa.html"},
+
+}
+
+    
+document.addEventListener("DOMContentLoaded", function() {
+    let params = new URLSearchParams(window.location.search);
+    var nombre = params.get('nombre');
+    
+    var top1 = params.get('top1');
+    var top2 = params.get('top2');
+    var top3 = params.get('top3');
+
+    document.getElementById("idNombre").innerText=nombre
+
+
+    document.getElementById("opcion1").innerText=areas[top1].titulo
+    document.getElementById("descripcion1").innerText=areas[top1].descipcion
+    document.getElementById("url1").href=areas[top1].url
+
+    document.getElementById("opcion2").innerText=areas[top2].titulo
+    document.getElementById("descripcion2").innerText=areas[top2].descipcion
+    document.getElementById("url2").href=areas[top2].url
+
+
+    document.getElementById("opcion3").innerText=areas[top3].titulo
+    document.getElementById("descripcion3").innerText=areas[top3].descipcion
+    document.getElementById("url3").href=areas[top3].url
+
+
+    
+    
+
+
+
+});
+
+</script>
+
+</html>
