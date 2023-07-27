@@ -36,7 +36,7 @@
                 <div class="w-full lg:w-1/2">
                     <div class="lg:max-w-lg">
                         <h1 class="text-3xl tracking-tight font-bold font-sans text-white dark:text-white lg:text-5xl">
-                            !Felicitaciones! <br><span class="text-[#D0E500]">Ronald</span> Lo lograste</h1>
+                            !Felicitaciones! <br><span id="idNombre" class="text-[#D0E500]"></span> Lo lograste</h1>
 
                         <p class="text-white text-lg  dark:text-gray-400 mt-4">En este apartado descubre tu perfil
                             vocacional y revisa las áreas y profesiones que encajan contigo.</p>
@@ -69,12 +69,9 @@
 
         <section class="bg-white dark:bg-gray-900 container mx-auto max-w-5xl px-6 py-12 text-center justify-center items-center">
             <div class="container px-6 py-2 mx-auto">
-                <h2 class="text-center text-4xl font-bold text-[#0D084D] lg:text-3xl dark:text-white">Carreras a tu elección 👇</h2>
+                <h2 class="text-center text-4xl font-bold text-[#0D084D] lg:text-3xl dark:text-white py-12">Carreras a tu elección 👇</h2>
             </div>
-            <div class="text-left justify-start items-start py-4 flex flex-row">
-                <img class="lg:max-w-3xl " src="../static/descargarpdf.png" alt="chica test OVP">
-                <img class="lg:max-w-3xl " src="../static/descargarexcel.png" alt="chica test OVP">
-            </div>
+
             <div class="relative overflow-x-auto">
                 <table class="text-sm text-left text-gray-500 dark:text-gray-400 cursor-pointer"><!-- w-full  -->
                    
@@ -178,11 +175,12 @@
             <div
                 class="container bg-[#0D084D] mx-auto py-20 flex px-5 items-center justify-center flex-col rounded-3xl">
                 <div class="text-center lg:w-2/3 w-full ">
-                    <h2 class="text-3xl tracking-tight font-bold font-sans text-white dark:text-white lg:text-5xl"><span class="text-[#D0E500]">Ronald, </span>¿Deseas que te envíemos esta info al correo?</h2>
+                    <h2 class="text-3xl tracking-tight font-bold font-sans text-white dark:text-white lg:text-5xl"><span id="idNombre" class="text-[#D0E500]"></span> ,Si deseas puedes descargar la info aquí</h2>
 
-                    <div class="flex flex-col justify-center">
-                        <input type="text" class="w-full mt-6 px-4 py-2 text-center border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Escribe tu correo aquí">
-                        <a href="#home" class="w-full px-5 py-3 mt-2 tracking-wider text-white transition-colors duration-300 transform bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Hacer el test →</a>
+
+                    <div class="text-left justify-center items-start py-4 flex flex-row gap-6">
+                        <a href="../static/ugtestingAdministrativa.pdf"><img class="lg:max-w-3xl " src="../static/descargarpdf.png" alt="chica test OVP"></a>
+                        <a href="../static/ugtestingAdministrativa.pdf"><img class="lg:max-w-3xl " src="../static/descargarexcel.png" alt="chica test OVP"></a>
                     </div>
                 </div>
             </div>
@@ -247,5 +245,17 @@
     </footer>
 
 </body>
+
+<script>
+       
+  document.addEventListener("DOMContentLoaded", function() {
+      let params = new URLSearchParams(window.location.search);
+      var nombre = params.get('nombre');
+      
+      document.getElementById("idNombre").innerText=nombre
+  
+  });
+  
+  </script>
 
 </html>
