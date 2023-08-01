@@ -9,10 +9,10 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 
-<body class="bg-[#FFE18A] flex flex-col min-h-screen bg-contain bg-center bg-no-repeat" style="background-image: url('./static/bgpreguntas2.png');">
+<body class="bg-[#FFE18A] flex flex-col min-h-screen bg-contain bg-center bg-no-repeat" style="background-image: url('./static/bgpreguntas2.png'); background-size: cover; background-position: center;">
 
   <!-- Header -->
-  <header class="p-4">
+  <header class="p-4 flex justify-center md:justify-start">
     <div class="container mx-auto">
       <!-- Logo (Replace 'logo.png' with your logo image file) -->
       <a href="/index.html">
@@ -26,14 +26,14 @@
 
     <!-- Heading -->
     <h1 id="idPregunta" class="text-[#0D084D] text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">
+      ¿Aceptarías trabajar escribiendo artículos en la sección económica de un diario?
     </h1>
 
     <!-- Buttons -->
     <div class="flex flex-row gap-6 mt-6">
-      <button onclick="clicBoton(true)" class="w-32 h-auto px-8 py-3 text-white transition-colors duration-300 bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Si</button>
-      <button onclick="clicBoton(false)" class="w-32 h-auto px-8 py-3 text-center text-white transition-colors duration-300 bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500">No</button>
+      <button onclick="clicBoton(true)" class="flex-1 h-auto px-8 py-3 text-white transition-colors duration-300 bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Si</button>
+      <button onclick="clicBoton(false)" class="flex-1 h-auto px-8 py-3 text-center text-white transition-colors duration-300 bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500">No</button>
     </div>
-    
     
   </main>
 
@@ -41,7 +41,6 @@
   <footer class="text-center text-gray-900 p-4">
     <h2 id="preguntaActual" ></h2>
   </footer>
-</body>
 
 <script>
   let params = new URLSearchParams(window.location.search);
@@ -100,10 +99,78 @@
 // Usage:
 // Initialize the quiz with the questions from the JSON
 var quiz = new Quiz(
-
-// [{"id":1,"titulo":"\u00bfAceptar\u00edas trabajar escribiendo art\u00edculos en la secci\u00f3n econ\u00f3mica de un diario?","area":"C"},{"id":2,"titulo":"Te gustar\u00eda dirigir\/crear un proyecto de urbanizaci\u00f3n en tu provincia?","area":"A"},{"id":3,"titulo":"\u00bfTe dedicar\u00edas a socorrer a personas accidentadas o atacadas por asaltantes?","area":"D"},{"id":4,"titulo":"\u00bfCu\u00e1ndo eras chico, te interesaba saber c\u00f3mo estaban construidos tus juguetes?","area":"I"},{"id":5,"titulo":"\u00bfEscuchas atentamente los problemas que te plantean tus amigos?","area":"S"},{"id":6,"titulo":"Te ofrecer\u00edas para explicar a tus compa\u00f1eros un determinado tema que ellos no entendieron?","area":"H"},{"id":7,"titulo":"Te atrae armar rompecabezas o puzzles?","area":"A"},{"id":8,"titulo":"Te gustar\u00eda conocer la diferencia entre macroeconom\u00eda y microeconom\u00eda?","area":"C"},{"id":9,"titulo":"\u00bfParticipar\u00edas como profesional en un espect\u00e1culo de acrobacia a\u00e9rea?","area":"D"},{"id":10,"titulo":"\u00bfConvences f\u00e1cilmente a otras personas sobre la validez de tus argumentos?","area":"S"},{"id":11,"titulo":"\u00bfTe gustar\u00eda estar informado sobre los nuevos descubrimientos que se est\u00e1n realizando sobre el origen del Universo?","area":"E"},{"id":12,"titulo":"\u00bfCu\u00e1ndo tienes que resolver un problema matem\u00e1tico, perseveras hasta encontrar la soluci\u00f3n?","area":"I"},{"id":13,"titulo":"Si te convocara tu club preferido para planificar, organizar y dirigir un campo de deportes, aceptar\u00edas?","area":"C"},{"id":14,"titulo":"Eres el que pone un toque de alegr\u00eda en las fiestas?","area":"A"},{"id":15,"titulo":"\u00bfTe sentir\u00edas a gusto trabajando en un \u00e1mbito hospitalario?","area":"S"},{"id":16,"titulo":"\u00bfTe gustar\u00eda participar para mantener el orden ante grandes des\u00f3rdenes y cataclismos?","area":"D"},{"id":17,"titulo":"Pasar\u00edas varias horas leyendo alg\u00fan libro de tu inter\u00e9s?","area":"H"},{"id":18,"titulo":"\u00bfEntablas una relaci\u00f3n casi personal con tu ordenador?","area":"I"},{"id":19,"titulo":"Disfrutas modelando con arcilla?","area":"A"},{"id":20,"titulo":"\u00bfAceptar\u00edas que las mujeres formaran parte de las fuerzas armadas bajo las mismas normas que los hombres?","area":"D"},{"id":21,"titulo":"\u00bfTe gustar\u00eda crear nuevas t\u00e9cnicas para descubrir las patolog\u00edas de algunas enfermedades a trav\u00e9s del microscopio?","area":"E"},{"id":22,"titulo":"\u00bfParticipar\u00edas en una campa\u00f1a de prevenci\u00f3n contra la enfermedad como el sida?","area":"S"},{"id":23,"titulo":"Te interesan los temas relacionados al pasado y a la evoluci\u00f3n del hombre?","area":"H"},{"id":24,"titulo":"\u00bfTe incluir\u00edas en un proyecto de investigaci\u00f3n de los movimientos s\u00edsmicos y sus consecuencias?","area":"E"},{"id":25,"titulo":"Fuera de los horarios escolares, dedicas alg\u00fan d\u00eda de la semana a la realizaci\u00f3n de actividades corporales?","area":"A"},{"id":26,"titulo":"\u00bfTe interesan las actividades de mucha acci\u00f3n y de reacci\u00f3n r\u00e1pida en situaciones imprevistas y de alg\u00fan peligro?","area":"D"},{"id":27,"titulo":"\u00bfTe ofrecer\u00edas para colaborar como voluntario en los gabinetes espaciales de la NASA?","area":"I"},{"id":28,"titulo":"Participar\u00edas de una investigaci\u00f3n sobre la violencia en el f\u00fatbol?","area":"H"},{"id":29,"titulo":"\u00bfTe gustar\u00eda trabajar en un laboratorio mientras estudias?","area":"E"},{"id":30,"titulo":"\u00bfTe agradar\u00eda hacer un curso de primeros auxilios?","area":"S"},{"id":31,"titulo":"Tolerar\u00edas empezar tantas veces como fuere necesario hasta obtener el logro deseado?","area":"A"},{"id":32,"titulo":"\u00bfHar\u00edas un curso para aprender a fabricar los instrumentos y\/o piezas de las m\u00e1quinas o aparatos con que trabajas?  ","area":"I"},{"id":33,"titulo":"\u00bfElegir\u00edas una profesi\u00f3n en la tuvieras que estar algunos meses alejado de tu familia, por ejemplo, el marino?","area":"D"},{"id":34,"titulo":"\u00bfTe radicar\u00edas en una zona agr\u00edcola-ganadera para desarrollar tus actividades como profesional?","area":"E"},{"id":35,"titulo":"Cu\u00e1ndo est\u00e1s en un grupo trabajando, te entusiasma producir ideas originales y que sean tenidas en cuenta?","area":"A"},{"id":36,"titulo":"\u00bfTe result\u00f3 interesante el estudio de las ciencias biol\u00f3gicas?","area":"S"},{"id":37,"titulo":"Si una gran empresa solicita un profesional como gerente de comercializaci\u00f3n, te sentir\u00edas a gusto desempe\u00f1ando ese rol?","area":"C"},{"id":38,"titulo":"\u00bfTe incluir\u00edas en un proyecto nacional de desarrollo de la principal fuente de recursos de tu provincia?","area":"I"},{"id":39,"titulo":"Descubriste alg\u00fan fil\u00f3sofo o escritor que haya expresado tus mismas ideas con antelaci\u00f3n?","area":"H"},{"id":40,"titulo":"Desear\u00edas que te regalen alg\u00fan instrumento musical para tu cumplea\u00f1os?","area":"A"},{"id":41,"titulo":"\u00bfAceptar\u00edas colaborar con el cumplimiento de las normas en lugares p\u00fablicos?","area":"D"},{"id":42,"titulo":"\u00bfCu\u00e1ndo se descompone un artefacto en tu casa, te dispones prontamente a repararlo?","area":"I"},{"id":43,"titulo":"\u00bfFormar\u00edas parte de un equipo de trabajo orientado a la preservaci\u00f3n de la flora y la fauna en extinci\u00f3n?","area":"E"},{"id":44,"titulo":"\u00bfLeer\u00edas revistas relacionadas con los \u00faltimos avances cient\u00edficos y tecnol\u00f3gicos en el \u00e1rea de la salud?","area":"S"},{"id":45,"titulo":"Te gustar\u00eda realizar una investigaci\u00f3n que contribuyera a hacer m\u00e1s justa la distribuci\u00f3n de la riqueza?","area":"C"},{"id":46,"titulo":"\u00bfTe gustar\u00eda realizar tareas auxiliares en una nave, como por ejemplo izado y arriado de velas, pintura y conservaci\u00f3n del casco, arreglo de aver\u00edas, conservaci\u00f3n de motores, etc.?","area":"D"},{"id":47,"titulo":"La libertad y la justicia son valores fundamentales en tu vida?","area":"H"},{"id":48,"titulo":"\u00bfAceptar\u00edas hacer una pr\u00e1ctica pagadas en una industria de productos alimenticios en el sector de control de calidad?","area":"E"},{"id":49,"titulo":"\u00bfTe interesar\u00eda investigar sobre alguna nueva vacuna?","area":"S"},{"id":50,"titulo":"En un equipo de trabajo, prefer\u00eds el rol de coordinador?","area":"C"},{"id":51,"titulo":"\u00bfEst\u00e1s de acuerdo con la formaci\u00f3n de un cuerpo de soldados profesionales?","area":"D"},{"id":52,"titulo":"Luchar\u00edas por una causa justa hasta las \u00faltimas consecuencias?","area":"H"},{"id":53,"titulo":"\u00bfTe gustar\u00eda investigar cient\u00edficamente sobre cultivos agr\u00edcolas?","area":"I"},{"id":54,"titulo":"\u00bfVisitar\u00edas un observatorio astron\u00f3mico para conocer en acci\u00f3n el funcionamiento de los aparatos?","area":"E"},{"id":55,"titulo":"Dirigir\u00edas el \u00e1rea de importaci\u00f3n y exportaci\u00f3n de una empresa?","area":"C"},{"id":56,"titulo":"Te gratificar\u00eda el trabajar con ni\u00f1os?","area":"H"},{"id":57,"titulo":"Har\u00edas el dise\u00f1o de un cartel o afiche para una campa\u00f1a contra el sida?","area":"A"},{"id":58,"titulo":"\u00bfEnviar\u00edas tu curriculum a una empresa automotriz que solicita gerente para su \u00e1rea de producci\u00f3n?","area":"I"},{"id":59,"titulo":"\u00bfParticipar\u00edas en un grupo de defensa internacional dentro de alguna fuerza armada?","area":"D"},{"id":60,"titulo":"Te costear\u00edas tus estudios trabajando en una auditor\u00eda \u0096revisi\u00f3n de las cuentas-?","area":"C"},{"id":61,"titulo":"\u00bfAnte una emergencia epid\u00e9mica participar\u00edas en una campa\u00f1a brindando tu ayuda?","area":"S"},{"id":62,"titulo":"\u00bfSabr\u00edas responder que significa ADN o ARN?","area":"E"},{"id":63,"titulo":"Elegir\u00edas una carrera cuyo instrumento de trabajo fuere la utilizaci\u00f3n de un idioma extranjero?","area":"H"},{"id":64,"titulo":"Te resultar\u00eda gratificante ser asesor contable en una empresa reconocida?","area":"C"},{"id":65,"titulo":"\u00bfAnte un llamado solidario, te ofrecer\u00edas para cuidar a un enfermo?","area":"S"},{"id":66,"titulo":"\u00bfTe atrae investigar sobre los misterios del universo, por ejemplo, los agujeros negros?","area":"E"},{"id":67,"titulo":"Dedicar\u00edas parte de tu tiempo a ayudar a personas con carencias o necesitadas?","area":"H"},{"id":68,"titulo":"Cu\u00e1ndo eliges tu ropa o decoras un ambiente, tienes en cuenta la combinaci\u00f3n de los colores, las telas o el estilo de los muebles?","area":"A"},{"id":69,"titulo":"\u00bfTe gustar\u00eda trabajar como profesional dirigiendo la construcci\u00f3n de una empresa hidroel\u00e9ctrica?","area":"I"},{"id":70,"titulo":"Sabes qu\u00e9 es el PIB? Se trata de un concepto econ\u00f3mico.Te gusta este tipo de tema?","area":"C"}]
-
-[{"id":1,"titulo":"\u00bfAceptar\u00edas trabajar escribiendo art\u00edculos en la secci\u00f3n econ\u00f3mica de un diario?","area":"C"},{"id":2,"titulo":"Te gustar\u00eda dirigir\/crear un proyecto de urbanizaci\u00f3n en tu provincia?","area":"A"},{"id":3,"titulo":"\u00bfTe dedicar\u00edas a socorrer a personas accidentadas o atacadas por asaltantes?","area":"D"},{"id":4,"titulo":"\u00bfCu\u00e1ndo eras chico, te interesaba saber c\u00f3mo estaban construidos tus juguetes?","area":"I"},{"id":5,"titulo":"\u00bfEscuchas atentamente los problemas que te plantean tus amigos?","area":"S"},{"id":6,"titulo":"Te ofrecer\u00edas para explicar a tus compa\u00f1eros un determinado tema que ellos no entendieron?","area":"H"},{"id":7,"titulo":"Te atrae armar rompecabezas o puzzles?","area":"A"},{"id":8,"titulo":"Te gustar\u00eda conocer la diferencia entre macroeconom\u00eda y microeconom\u00eda?","area":"C"},{"id":9,"titulo":"\u00bfParticipar\u00edas como profesional en un espect\u00e1culo de acrobacia a\u00e9rea?","area":"D"}]
+  [
+  {"id":1,"titulo":"¿Aceptarías trabajar escribiendo artículos en la sección económica de un diario?","area":"C"},
+  {"id":2,"titulo":"¿Te gustaría dirigir/crear un proyecto de urbanización en tu provincia?","area":"A"},
+  {"id":3,"titulo":"¿Te dedicarías a socorrer a personas accidentadas o atacadas por asaltantes?","area":"D"},
+  {"id":4,"titulo":"¿Cuándo eras chico, te interesaba saber cómo estaban construidos tus juguetes?","area":"I"},
+  {"id":5,"titulo":"¿Escuchas atentamente los problemas que te plantean tus amigos?","area":"S"},
+  {"id":6,"titulo":"¿Te ofrecerías para explicar a tus compañeros un determinado tema que ellos no entendieron?","area":"H"},
+  {"id":7,"titulo":"¿Te atrae armar rompecabezas o puzzles?","area":"A"},
+  {"id":8,"titulo":"¿Te gustaría conocer la diferencia entre macroeconomía y microeconomía?","area":"C"},
+  {"id":9,"titulo":"¿Participarías como profesional en un espectáculo de acrobacia aérea?","area":"D"},
+  {"id":10,"titulo":"¿Convences fácilmente a otras personas sobre la validez de tus argumentos?","area":"S"},
+  {"id":11,"titulo":"¿Te gustaría estar informado sobre los nuevos descubrimientos que se están realizando sobre el origen del Universo?","area":"E"},
+  {"id":12,"titulo":"¿Cuándo tienes que resolver un problema matemático, perseveras hasta encontrar la solución?","area":"I"},
+  {"id":13,"titulo":"¿Si te convocara tu club preferido para planificar, organizar y dirigir un campo de deportes, aceptarías?","area":"C"},
+  {"id":14,"titulo":"¿Eres el que pone un toque de alegría en las fiestas?","area":"A"},
+  {"id":15,"titulo":"¿Te sentirías a gusto trabajando en un ámbito hospitalario?","area":"S"},
+  {"id":16,"titulo":"¿Te gustaría participar para mantener el orden ante grandes desórdenes y cataclismos?","area":"D"},
+  {"id":17,"titulo":"¿Pasarías varias horas leyendo algún libro de tu interés?","area":"H"},
+  {"id":18,"titulo":"¿Entablas una relación casi personal con tu ordenador?","area":"I"},
+  {"id":19,"titulo":"¿Disfrutas modelando con arcilla?","area":"A"},
+  {"id":20,"titulo":"¿Aceptarías que las mujeres formaran parte de las fuerzas armadas bajo las mismas normas que los hombres?","area":"D"},
+  {"id":21,"titulo":"¿Te gustaría crear nuevas técnicas para descubrir las patologías de algunas enfermedades a través del microscopio?","area":"E"},
+  {"id":22,"titulo":"¿Participarías en una campaña de prevención contra la enfermedad como el sida?","area":"S"},
+  {"id":23,"titulo":"¿Te interesan los temas relacionados al pasado y a la evolución del hombre?","area":"H"},
+  {"id":24,"titulo":"¿Te incluirías en un proyecto de investigación de los movimientos sísmicos y sus consecuencias?","area":"E"},
+  {"id":25,"titulo":"¿Fuera de los horarios escolares, dedicas algún día de la semana a la realización de actividades corporales?","area":"A"},
+  {"id":26,"titulo":"¿Te interesan las actividades de mucha acción y de reacción rápida en situaciones imprevistas y de algún peligro?","area":"D"},
+  {"id":27,"titulo":"¿Te ofrecerías para colaborar como voluntario en los gabinetes espaciales de la NASA?","area":"I"},
+  {"id":28,"titulo":"¿Participarías de una investigación sobre la violencia en el fútbol?","area":"H"},
+  {"id":29,"titulo":"¿Te gustaría trabajar en un laboratorio mientras estudias?","area":"E"},
+  {"id":30,"titulo":"¿Te agradaría hacer un curso de primeros auxilios?","area":"S"},
+  {"id":31,"titulo":"¿Tolerarías empezar tantas veces como fuere necesario hasta obtener el logro deseado?","area":"A"},
+  {"id":32,"titulo":"¿Harías un curso para aprender a fabricar los instrumentos y/o piezas de las máquinas o aparatos con que trabajas?","area":"I"},
+  {"id":33,"titulo":"¿Elegirías una profesión en la que tuvieras que estar algunos meses alejado de tu familia, por ejemplo, el marino?","area":"D"},
+  {"id":34,"titulo":"¿Te radicarías en una zona agrícola-ganadera para desarrollar tus actividades como profesional?","area":"E"},
+  {"id":35,"titulo":"¿Cuando estás en un grupo trabajando, te entusiasma producir ideas originales y que sean tenidas en cuenta?","area":"A"},
+  {"id":36,"titulo":"¿Te resultó interesante el estudio de las ciencias biológicas?","area":"S"},
+  {"id":37,"titulo":"¿Si una gran empresa solicita un profesional como gerente de comercialización, te sentirías a gusto desempeñando ese rol?","area":"C"},
+  {"id":38,"titulo":"¿Te incluirías en un proyecto nacional de desarrollo de la principal fuente de recursos de tu provincia?","area":"I"},
+  {"id":39,"titulo":"¿Descubriste algún filósofo o escritor que haya expresado tus mismas ideas con antelación?","area":"H"},
+  {"id":40,"titulo":"¿Desearías que te regalen algún instrumento musical para tu cumpleaños?","area":"A"},
+  {"id":41,"titulo":"¿Aceptarías colaborar con el cumplimiento de las normas en lugares públicos?","area":"D"},
+  {"id":42,"titulo":"¿Cuando se descompone un artefacto en tu casa, te dispones prontamente a repararlo?","area":"I"},
+  {"id":43,"titulo":"¿Formarías parte de un equipo de trabajo orientado a la preservación de la flora y la fauna en extinción?","area":"E"},
+  {"id":44,"titulo":"¿Leerías revistas relacionadas con los últimos avances científicos y tecnológicos en el área de la salud?","area":"S"},
+  {"id":45,"titulo":"¿Te gustaría realizar una investigación que contribuyera a hacer más justa la distribución de la riqueza?","area":"C"},
+  {"id":46,"titulo":"¿Te gustaría realizar tareas auxiliares en una nave, como por ejemplo izado y arriado de velas, pintura y conservación del casco, arreglo de averías, conservación de motores, etc.?","area":"D"},
+  {"id":47,"titulo":"¿La libertad y la justicia son valores fundamentales en tu vida?","area":"H"},
+  {"id":48,"titulo":"¿Aceptarías hacer una práctica pagadas en una industria de productos alimenticios en el sector de control de calidad?","area":"E"},
+  {"id":49,"titulo":"¿Te interesaría investigar sobre alguna nueva vacuna?","area":"S"},
+  {"id":50,"titulo":"¿En un equipo de trabajo, preferís el rol de coordinador?","area":"C"},
+  {"id":51,"titulo":"¿Estás de acuerdo con la formación de un cuerpo de soldados profesionales?","area":"D"},
+  {"id":52,"titulo":"¿Lucharías por una causa justa hasta las últimas consecuencias?","area":"H"},
+  {"id":53,"titulo":"¿Te gustaría investigar científicamente sobre cultivos agrícolas?","area":"I"},
+  {"id":54,"titulo":"¿Visitarías un observatorio astronómico para conocer en acción el funcionamiento de los aparatos?","area":"E"},
+  {"id":55,"titulo":"¿Dirigirías el área de importación y exportación de una empresa?","area":"C"},
+  {"id":56,"titulo":"¿Te gratificaría el trabajar con niños?","area":"H"},
+  {"id":57,"titulo":"¿Harías el diseño de un cartel o afiche para una campaña contra el sida?","area":"A"},
+  {"id":58,"titulo":"¿Enviarías tu curriculum a una empresa automotriz que solicita gerente para su área de producción?","area":"I"},
+  {"id":59,"titulo":"¿Participarías en un grupo de defensa internacional dentro de alguna fuerza armada?","area":"D"},
+  {"id":60,"titulo":"¿Te costearías tus estudios trabajando en una auditoría revisión de las cuentas?","area":"C"},
+  {"id":61,"titulo":"¿Ante una emergencia epidémica participarías en una campaña brindando tu ayuda?","area":"S"},
+  {"id":62,"titulo":"¿Sabrías responder qué significa ADN o ARN?","area":"E"},
+  {"id":63,"titulo":"¿Elegirías una carrera cuyo instrumento de trabajo fuere la utilización de un idioma extranjero?","area":"H"},
+  {"id":64,"titulo":"¿Te resultaría gratificante ser asesor contable en una empresa reconocida?","area":"C"},
+  {"id":65,"titulo":"¿Ante un llamado solidario, te ofrecerías para cuidar a un enfermo?","area":"S"},
+  {"id":66,"titulo":"¿Te atrae investigar sobre los misterios del universo, por ejemplo, los agujeros negros?","area":"E"},
+  {"id":67,"titulo":"¿Dedicarías parte de tu tiempo a ayudar a personas con carencias o necesitadas?","area":"H"},
+  {"id":68,"titulo":"¿Cuándo eliges tu ropa o decoras un ambiente, tienes en cuenta la combinación de los colores, las telas o el estilo de los muebles?","area":"A"},
+  {"id":69,"titulo":"¿Te gustaría trabajar como profesional dirigiendo la construcción de una empresa hidroeléctrica?","area":"I"},
+  {"id":70,"titulo":"¿Sabes qué es el PIB? Se trata de un concepto económico. ¿Te gusta este tipo de tema?","area":"C"}
+]
 
 
 );
@@ -113,6 +180,19 @@ var quiz = new Quiz(
 
 // Get the top 3 areas
 // let topAreas = quiz.getTopAreas();
+
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  // Mezclar las preguntas antes de inicializar el cuestionario
+  quiz.questions = shuffleArray(quiz.questions);
+
 
 function mostrarPregunta (){
   document.getElementById("idPregunta").innerText=quiz.currentQuestion().titulo

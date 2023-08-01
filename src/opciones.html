@@ -11,34 +11,34 @@
 <body>
 
     <header class="bg-[#0D084D]">
-        <!-- nab_bar -->
+        
+        <!-- Navbar -->
         <nav class="relative bg-[#0D084D] dark:bg-gray-900">
-            <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
-
+            <div class="container px-4 py-8 mx-auto md:flex md:justify-between md:items-center">
+        
                 <!-- Logo -->
-                <a href="/index.html"><img class="w-auto h-6 sm:h-10"
-                        src="./static/logo.png"></a>
-
-                <!-- btn nab_bar -->
-                <div
-                    class="absolute z-20 w-full px-6 py-4 md:mt-0 md:p-0 md:top-0 md:relative md:w-auto  md:flex md:items-center">
-                    <div class="flex flex-col md:flex-row md:mx-6">
-                        <a class="my-2 text-white dark:text-gray-200 md:mx-4 md:my-0 cursor-pointer"
-                            href="#">Metodología Chaside</a>
-                    </div>
+                <div class="flex justify-center items-center md:justify-start">
+                    <img class="w-auto h-7 sm:h-10" src="./static/logo.png" alt="Logo">
                 </div>
+        
+                <!-- btn nab_bar -->
+                <div class="md:flex md:items-center md:space-x-4 flex justify-center items-center md:justify-start">
+                    <a class="flex items-center my-2 text-white dark:text-gray-200 md:my-0 cursor-pointer" href="#">Metodología Chaside</a>
+                    <!-- Add more navigation links here if needed -->
+                </div>
+        
             </div>
         </nav>
 
         <!-- text home -->
-        <div class="px-24 mx-auto pt-6 bg-[#3835BF]">
+        <div class="px-4 md:px-24 mx-auto pt-6 bg-[#3835BF]">
             <div class="items-center lg:flex">
                 <div class="w-full lg:w-1/2">
                     <div class="lg:max-w-lg">
-                        <h1 class="text-3xl tracking-tight font-bold font-sans text-white dark:text-white lg:text-5xl">
+                        <h1 class="text-2xl md:text-3xl tracking-tight font-bold font-sans text-white dark:text-white lg:text-5xl">
                             !Felicitaciones! <br><span id="idNombre" class="text-[#D0E500]"></span> Lo lograste</h1>
 
-                        <p class="text-white text-lg  dark:text-gray-400 mt-4">En este apartado descubre tu perfil
+                        <p class="text-white text-lg md:text-xl lg:text-lg  dark:text-gray-400 mt-4">En este apartado descubre tu perfil
                             vocacional y
                             revisa las áreas y profesiones que encajan contigo.</p>
                     </div>
@@ -60,12 +60,12 @@
 
         <!-- Secction: 3 OPCIONES  -->
         <section class="text-gray-600 body-font overflow-hidden">
-            <div class="container px-5 py-24 mx-auto">
+            <div class="container px-4 md:px-5 py-12 md:py-24 mx-auto">
 
                 <div
                     class="bg-white dark:bg-gray-900 container mx-auto px-6 pb-12 text-center justify-center items-center">
-                    <h2 class="mt-2 text-center text-4xl font-bold text-[#0D084D] lg:text-4xl dark:text-white">Te mostramos 3 opciones</h2>
-                    <p class=" mt-6 text-lg leading-8 text-gray-600 ">De acuerdo a las respuestas, este es el resultado del Test de <br>Orientación Vocacional.</p>
+                    <h2 class="mt-4 md:mt-2 text-center text-2xl md:text-4xl font-bold text-[#0D084D] lg:text-4xl dark:text-white">Te mostramos 3 opciones</h2>
+                    <p class=" mt-4 md:mt-6 text-base md:text-lg leading-7 text-gray-600 md:leading-8 ">De acuerdo a las respuestas, este es el resultado del Test de <br>Orientación Vocacional.</p>
                 </div>
 
                 <div class="-my-8 divide-y-2 divide-gray-100">
@@ -76,9 +76,9 @@
                             <span class="mt-1 text-gray-500 text-sm">Fecha Actual</span>
                         </div>
                         <div class="md:flex-grow">
-                            <h2 id="opcion1" class="text-2xl font-bold text-[#0D084D] title-font mb-2"></h2>
+                            <h2 id="opcion1" class="text-xl md:text-2xl font-bold text-[#0D084D] title-font mb-2"></h2>
                             <p id="descripcion1" class="leading-relaxed"></p>
-                            <a id="url1" class="text-indigo-500 inline-flex items-center mt-4 cursor-pointer">Conocer más →</a>
+                            <a id="url1" class="text-indigo-500 inline-flex items-center mt-2 md:mt-4 cursor-pointer">Conocer más →</a>
                         </div>
                     </div>
 
@@ -88,9 +88,9 @@
                             <span class="mt-1 text-gray-500 text-sm">Fecha Actual</span>
                         </div>
                         <div class="md:flex-grow">
-                            <h2 id="opcion2" class="text-2xl font-bold text-[#0D084D] title-font mb-2"></h2>
+                            <h2 id="opcion2" class="text-xl md:text-2xl font-bold text-[#0D084D] title-font mb-2"></h2>
                             <p id="descripcion2" class="leading-relaxed"></p>
-                            <a id="url2" class="text-indigo-500 inline-flex items-center mt-4 cursor-pointer">Conocer más →</a>
+                            <a id="url2" class="text-indigo-500 inline-flex items-center mt-2 md:mt-4 cursor-pointer">Conocer más →</a>
                         </div>
                     </div>
 
@@ -100,9 +100,9 @@
                             <span class="mt-1 text-gray-500 text-sm">Fecha Actual</span>
                         </div>
                         <div class="md:flex-grow">
-                            <h2 id="opcion3" class="text-2xl font-bold text-[#0D084D] title-font mb-2"></h2>
+                            <h2 id="opcion3" class="text-xl md:text-2xl font-bold text-[#0D084D] title-font mb-2"></h2>
                             <p id="descripcion3" class="leading-relaxed"></p>
-                            <a id="url3" class="text-indigo-500 inline-flex items-center mt-4 cursor-pointer">Conocer más →</a>
+                            <a id="url3" class="text-indigo-500 inline-flex items-center mt-2 md:mt-4 cursor-pointer">Conocer más →</a>
                         </div>
                     </div>
 
@@ -112,8 +112,8 @@
 
 
         <!-- secction: VIDEO -->
-        <section class="bg-white dark:bg-gray-900 container mx-auto px-6 text-center justify-center items-center">
-            <iframe class="min-w-full mt-12 h-64 md:h-[550px] rounded-xl overflow-hidden"
+        <section class="bg-white dark:bg-gray-900 container mx-auto px-4 md:px-6 text-center justify-center items-center">
+            <iframe class="w-full mt-8 h-64 md:h-[550px] lg:h-[600px] rounded-xl overflow-hidden"
                 src="https://www.youtube.com/embed/hGGL1sA0H5k" frameborder="0" allow="autoplay; fullscreen"
                 allowfullscreen=""></iframe>
         </section>
@@ -121,25 +121,24 @@
 
         <!-- Secction: SOFTWARE -->
         <section>
-            <div class="px-5 py-24 mx-auto lg:px-16">
+            <div class="px-5 py-12 md:py-24 mx-auto lg:px-16">
                 <div class="flex flex-col w-full mb-8 text-center">
-                    <span class="mb-4 text-4xl font-bold text-[#0D084D]">Software utilizados</span>
+                    <span class="mb-4 text-3xl font-bold text-[#0D084D]">Software utilizados</span>
                 </div>
                 <div class="mx-auto text-center">
-                    <div class="grid grid-cols-4 gap-4 mx-auto lg:grid-cols-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-auto">
                         <div>
-                            <img class="h-4 mx-auto lg:h-12" src="./static/html.png" alt="Figma">
+                            <img class="h-12 mx-auto" src="./static/html.png" alt="Figma">
                         </div>
                         <div>
-                            <img class="h-4 mx-auto lg:h-12" src="./static/tailwind.png" alt="Framer">
+                            <img class="h-12 mx-auto" src="./static/tailwind.png" alt="Framer">
                         </div>
                         <div>
-                            <img class="h-4 mx-auto lg:h-12" src="./static/js.png" alt="Sketch ">
+                            <img class="h-12 mx-auto" src="./static/js.png" alt="Sketch ">
                         </div>
                         <div>
-                            <img class="h-4 mx-auto lg:h-12" src="./static/node.png" alt="Sketch ">
+                            <img class="h-12 mx-auto" src="./static/node.png" alt="Sketch ">
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -149,7 +148,7 @@
         <!-- Secction: AUTORES -->
         <section class="bg-white dark:bg-gray-900">
 
-            <div class="container px-6 py-24 mx-auto">
+            <div class="container px-4 md:px-6 py-12 md:py-24 mx-auto">
                 <h1 class="text-center text-4xl font-bold text-[#0D084D] lg:text-3xl dark:text-white">Creadores del
                     entorno virtual
                 </h1>
@@ -204,7 +203,8 @@
             <a href="#">
                 <img class="w-auto h-7" src="./static/logo.png" alt="">
             </a>
-            <p class="mt-6 text-sm text-white lg:mt-0 dark:text-gray-400">© Copyright 2023 Ronald Reyes Arciniegas. </p>
+            <p class="mt-6 text-sm text-white lg:mt-0 dark:text-gray-400">© Copyright 2023 Ronald Reyes Arciniegas.
+            </p>
         </div>
     </footer>
 
@@ -248,14 +248,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("descripcion3").innerText=areas[top3].descipcion
     document.getElementById("url3").href=areas[top3].url
 
-
-    
-    
-
-
-
 });
-
 </script>
 
 </html>
