@@ -278,8 +278,8 @@
         var NombreUsusario = document.getElementById("nombre").value
         if (NombreUsusario){
             // enviar a la otra pagina
-            // window.open("/preguntas.html?nombre="+NombreUsusario, "_self")
-            window.open("/preguntas.html?nombre="+encodeURIComponent(NombreUsuario), "_self")
+            window.open("/preguntas.html?nombre="+NombreUsusario, "_self")
+            // window.open("/preguntas.html?nombre="+encodeURIComponent(NombreUsuario), "_self")
         }
         else {
             alert ("Debe ingresar su nombre")
